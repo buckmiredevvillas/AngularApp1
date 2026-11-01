@@ -1,0 +1,7 @@
+.user-bio {
+  border-top: 5px solid #f472b6;
+}
+
+.user-bio textarea {
+  min-height: 120px;
+}
