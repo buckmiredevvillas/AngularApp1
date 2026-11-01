@@ -1,0 +1,12 @@
+<div class="user-status">
+  <h2>User Status</h2>
+
+  <p>
+    Current Status:
+    <strong>{{ isOnline ? 'Online' : 'Offline' }}</strong>
+  </p>
+
+  <button (click)="toggleStatus()">
+    {{ isOnline ? 'Go Offline' : 'Go Online' }}
+  </button>
+</div>

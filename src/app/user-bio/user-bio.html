@@ -1,0 +1,17 @@
+<div class="user-bio">
+  <h2>About Me</h2>
+
+  @if (isEditing) {
+    <textarea
+      rows="5"
+      [value]="draftBio"
+      (input)="draftBio = $any($event.target).value">
+    </textarea>
+
+    <button (click)="saveBio()">Save Bio</button>
+    <button (click)="cancelEdit()">Cancel</button>
+  } @else {
+    <p>{{ bio }}</p>
+    <button (click)="editBio()">Edit Bio</button>
+  }
+</div>

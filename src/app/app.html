@@ -1,0 +1,29 @@
+<div class="dashboard">
+
+  <h1>My User Profile Dashboard</h1>
+
+  <p class="subtitle">
+    Angular Development - Assignment 1
+  </p>
+
+  <div class="dashboard-container">
+
+    <app-user-card
+      [name]="name"
+      [age]="age"
+      [email]="email">
+    </app-user-card>
+
+    <app-user-status
+      [isOnline]="isOnline"
+      (statusChange)="updateStatus($event)">
+    </app-user-status>
+
+    <app-user-bio
+      [bio]="bio"
+      (bioChange)="updateBio($event)">
+    </app-user-bio>
+
+  </div>
+
+</div>
